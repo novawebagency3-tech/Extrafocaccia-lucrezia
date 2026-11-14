@@ -1,0 +1,830 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline'; style-src 'self' 'unsafe-inline'; img-src 'self' data:; font-src 'self'; frame-src https://www.google.com; connect-src 'none'; object-src 'none'; base-uri 'self'; form-action 'none'">
+<meta name="referrer" content="strict-origin-when-cross-origin">
+<meta name="theme-color" content="#161616">
+<title>Extrafocaccia Pizzeria – Pizza al Piatto, Mezzo Metro e Focacce | Lucrezia di Cartoceto (PU)</title>
+<meta name="description" content="Extrafocaccia Pizzeria a Lucrezia di Cartoceto (PU): impasto di Tipo 1 ad alta digeribilità, pizza al piatto, pizza al mezzo metro, focacce farcite e pizze senza glutine. Asporto veloce, aperti tutte le sere. Tel. 0721 1391091.">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%23C81D25'/%3E%3Ctext x='32' y='43' font-size='34' font-weight='900' text-anchor='middle' fill='%23fff' font-family='Arial'%3EE%3C/text%3E%3C/svg%3E">
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Restaurant",
+  "name": "Extrafocaccia Pizzeria",
+  "description": "Pizzeria con impasto di farina semi-integrale di Tipo 1: pizza al piatto, pizza al mezzo metro, focacce farcite e pizze senza glutine.",
+  "servesCuisine": "Pizza, Focaccia",
+  "telephone": "+39 0721 1391091",
+  "priceRange": "€",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "Via Flaminia, 146",
+    "addressLocality": "Lucrezia di Cartoceto",
+    "addressRegion": "PU",
+    "postalCode": "61030",
+    "addressCountry": "IT"
+  },
+  "geo": { "@type": "GeoCoordinates", "latitude": 43.7743409, "longitude": 12.9363695 },
+  "openingHoursSpecification": [
+    { "@type": "OpeningHoursSpecification", "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday"], "opens": "17:30", "closes": "22:00" },
+    { "@type": "OpeningHoursSpecification", "dayOfWeek": ["Friday","Saturday","Sunday"], "opens": "17:30", "closes": "22:30" }
+  ],
+  "paymentAccepted": "Contanti, Carte di credito, Bancomat, NFC",
+  "sameAs": ["https://www.instagram.com/extrafocacciapizzeria/"]
+}
+</script>
+
+<style>
+:root{
+  --bg:#FAF8F5; --card:#FFFFFF; --line:#E5E0D8;
+  --red:#C81D25; --red-d:#9E141B; --ink:#161616; --green:#2E6F40;
+  --muted:#6b645b; --radius:14px;
+  --font: system-ui,-apple-system,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;
+}
+*{box-sizing:border-box}
+[hidden]{display:none!important}
+html{scroll-behavior:smooth}
+body{margin:0;font-family:var(--font);background:var(--bg);color:var(--ink);line-height:1.55;-webkit-text-size-adjust:100%}
+img{max-width:100%;display:block}
+a{color:var(--red)}
+h1,h2,h3{line-height:1.15;margin:0}
+section[id]{scroll-margin-top:68px}
+.wrap{width:100%;max-width:1080px;margin:0 auto;padding:0 18px}
+.sr{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap}
+:focus-visible{outline:3px solid var(--red);outline-offset:2px}
+
+/* Buttons */
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;min-height:48px;padding:12px 20px;border-radius:999px;border:2px solid transparent;font:inherit;font-weight:700;font-size:1rem;text-decoration:none;cursor:pointer;transition:background .15s,color .15s,border-color .15s,transform .1s}
+.btn:active{transform:scale(.98)}
+.btn-red{background:var(--red);color:#fff}
+.btn-red:hover{background:var(--red-d)}
+.btn-dark{background:var(--ink);color:#fff}
+.btn-dark:hover{background:#333}
+.btn-line{background:transparent;color:var(--ink);border-color:var(--ink)}
+.btn-line:hover{background:var(--ink);color:#fff}
+.btn-block{width:100%}
+
+/* Header */
+.hdr{position:sticky;top:0;z-index:50;background:var(--ink);color:#fff}
+.hdr .wrap{display:flex;align-items:center;justify-content:space-between;gap:12px;min-height:60px}
+.brand{display:flex;align-items:center;gap:10px;text-decoration:none;color:#fff}
+.brand img{height:40px;width:auto;border-radius:6px}
+.wm{display:inline-flex;flex-direction:column;line-height:1;text-transform:uppercase}
+.wm small{font-size:.62rem;letter-spacing:.32em;font-weight:700;opacity:.85}
+.wm b{font-size:1.15rem;font-weight:900;letter-spacing:.02em}
+.wm b span{color:var(--red)}
+.nav{display:none;gap:22px}
+.nav a{color:#fff;text-decoration:none;font-weight:600;font-size:.95rem}
+.nav a:hover{color:#ff8a90}
+.hdr .btn{min-height:40px;padding:8px 16px;font-size:.92rem}
+@media(min-width:820px){.nav{display:flex}}
+
+/* Hero */
+.hero{padding:34px 0 44px;background:
+  radial-gradient(900px 300px at 85% -10%,rgba(200,29,37,.10),transparent 60%),var(--bg);
+  border-bottom:1px solid var(--line)}
+.hero-logo{margin-bottom:18px}
+.hero-logo img{height:84px;width:auto}
+.hero-logo .wm b{font-size:2rem;color:var(--ink)}
+.hero-logo .wm small{color:var(--ink);font-size:.8rem}
+.badges{display:flex;flex-wrap:wrap;gap:8px;margin-bottom:16px}
+.badge{display:inline-block;padding:6px 12px;border-radius:999px;font-size:.74rem;font-weight:800;letter-spacing:.06em;text-transform:uppercase}
+.badge-red{background:var(--red);color:#fff}
+.badge-green{background:var(--green);color:#fff}
+.badge-closed{background:#555;color:#fff}
+.badge-line{background:#fff;border:1px solid var(--line);color:var(--ink)}
+.hero h1{font-size:clamp(1.9rem,6.4vw,3.2rem);font-weight:900;letter-spacing:-.02em;max-width:18ch}
+.hero h1 em{font-style:normal;color:var(--red)}
+.hero p.sub{font-size:1.08rem;color:#3d3832;max-width:60ch;margin:16px 0 24px;font-style:italic}
+.hero .cta{display:grid;gap:10px;max-width:420px}
+@media(min-width:700px){.hero .cta{display:flex;flex-wrap:wrap;max-width:none}}
+
+/* Sections */
+.sec{padding:52px 0}
+.sec h2{font-size:clamp(1.55rem,4.6vw,2.2rem);font-weight:900;letter-spacing:-.01em;margin-bottom:8px}
+.sec h2 em{font-style:normal;color:var(--red)}
+.lead{color:var(--muted);max-width:62ch;margin:0 0 24px}
+.dark{background:var(--ink);color:#fff}
+.dark .lead{color:#cfc9bf}
+.dark h2 em{color:#ff6b72}
+
+/* Menu */
+.search{position:relative;margin-bottom:14px}
+.search input{width:100%;min-height:52px;padding:12px 16px 12px 46px;border:2px solid var(--line);border-radius:999px;background:#fff;font:inherit;font-size:1rem}
+.search input:focus{outline:none;border-color:var(--red)}
+.search svg{position:absolute;left:16px;top:50%;transform:translateY(-50%);width:20px;height:20px;stroke:var(--muted)}
+.tabs{display:flex;gap:8px;overflow-x:auto;padding:2px 2px 10px;scrollbar-width:thin;-webkit-overflow-scrolling:touch}
+.tab{flex:0 0 auto;min-height:44px;padding:10px 16px;border-radius:999px;border:2px solid var(--line);background:#fff;font:inherit;font-weight:700;font-size:.95rem;cursor:pointer;white-space:nowrap}
+.tab[aria-selected="true"]{background:var(--ink);border-color:var(--ink);color:#fff}
+.chips{display:flex;flex-wrap:wrap;gap:8px;margin:2px 0 18px;align-items:center}
+.chips span.lbl{font-size:.8rem;font-weight:700;color:var(--muted);text-transform:uppercase;letter-spacing:.06em}
+.chip{min-height:36px;padding:6px 14px;border-radius:999px;border:1.5px solid var(--line);background:#fff;font:inherit;font-weight:600;font-size:.88rem;cursor:pointer}
+.chip[aria-pressed="true"]{background:var(--red);border-color:var(--red);color:#fff}
+.chip.gf[aria-pressed="true"]{background:var(--green);border-color:var(--green)}
+.cat-title{margin:22px 0 10px;font-size:1.05rem;font-weight:900;text-transform:uppercase;letter-spacing:.08em;color:var(--red);border-bottom:2px solid var(--red);padding-bottom:6px}
+.cat-title:first-child{margin-top:4px}
+.grid{display:grid;gap:12px}
+@media(min-width:760px){.grid{grid-template-columns:1fr 1fr}}
+.item{background:var(--card);border:1px solid var(--line);border-radius:var(--radius);padding:14px 16px;display:flex;flex-direction:column;gap:10px;justify-content:space-between}
+.item h3{font-size:1.08rem;font-weight:800}
+.item p{margin:4px 0 0;color:var(--muted);font-size:.9rem}
+.gfb{display:inline-block;margin-left:6px;padding:2px 8px;border-radius:999px;background:var(--green);color:#fff;font-size:.68rem;font-weight:800;vertical-align:middle;letter-spacing:.04em}
+.prices{display:flex;flex-wrap:wrap;gap:8px}
+.add{display:inline-flex;align-items:center;gap:8px;min-height:44px;padding:8px 14px;border:2px solid var(--red);border-radius:999px;background:#fff;color:var(--red);font:inherit;font-weight:800;font-size:.95rem;cursor:pointer;transition:background .15s,color .15s}
+.add:hover,.add:active{background:var(--red);color:#fff}
+.add .sz{font-weight:600;font-size:.78rem;opacity:.85;text-transform:uppercase;letter-spacing:.04em}
+.add .pl{display:inline-grid;place-items:center;width:22px;height:22px;border-radius:50%;background:var(--red);color:#fff;font-size:1rem;line-height:1}
+.add:hover .pl,.add:active .pl{background:#fff;color:var(--red)}
+.empty{padding:28px;text-align:center;background:#fff;border:1px dashed var(--line);border-radius:var(--radius);color:var(--muted)}
+.note{font-size:.82rem;color:var(--muted);margin-top:16px}
+
+/* Why */
+.why{display:grid;gap:26px;align-items:center}
+@media(min-width:860px){.why{grid-template-columns:1.1fr 1fr}}
+.gallery{display:grid;grid-template-columns:1fr 1fr;gap:10px}
+.ph{position:relative;margin:0;border-radius:var(--radius);overflow:hidden;background:#2a2a2a;aspect-ratio:3/4;display:grid;place-items:center}
+.ph img{width:100%;height:100%;object-fit:cover;filter:brightness(1.07) contrast(1.1) saturate(1.12)}
+.ph figcaption{position:absolute;left:0;right:0;bottom:0;padding:22px 10px 8px;font-size:.76rem;color:#fff;background:linear-gradient(transparent,rgba(0,0,0,.72))}
+.ph .fb{padding:16px;text-align:center;color:#bbb;font-size:.8rem}
+.feats{display:grid;gap:12px;margin-top:30px}
+@media(min-width:620px){.feats{grid-template-columns:1fr 1fr}}
+@media(min-width:960px){.feats{grid-template-columns:repeat(3,1fr)}}
+.feat{background:var(--card);border:1px solid var(--line);border-radius:var(--radius);padding:18px}
+.feat .ic{font-size:1.7rem;line-height:1}
+.feat h3{font-size:1.02rem;margin:10px 0 4px;font-weight:800}
+.feat p{margin:0;color:var(--muted);font-size:.92rem}
+
+/* Order */
+.order{display:grid;gap:18px}
+@media(min-width:900px){.order{grid-template-columns:1.15fr 1fr;align-items:start}}
+.panel{background:var(--card);border:1px solid var(--line);border-radius:var(--radius);padding:18px}
+.panel h3{font-size:1.1rem;font-weight:900;margin-bottom:12px}
+.seg{display:grid;grid-template-columns:1fr 1fr;gap:8px;margin-bottom:14px}
+.seg input{position:absolute;opacity:0;pointer-events:none}
+.seg label{display:flex;align-items:center;justify-content:center;min-height:50px;padding:8px;border:2px solid var(--line);border-radius:12px;font-weight:700;cursor:pointer;text-align:center;background:#fff}
+.seg input:checked+label{border-color:var(--red);background:#fdeceb;color:var(--red-d)}
+.seg input:focus-visible+label{outline:3px solid var(--red);outline-offset:2px}
+.f{display:grid;gap:5px;margin-bottom:12px}
+.f label{font-weight:700;font-size:.9rem}
+.f input,.f select,.f textarea{width:100%;min-height:48px;padding:10px 12px;border:2px solid var(--line);border-radius:12px;background:#fff;font:inherit;font-size:1rem;color:var(--ink)}
+.f textarea{min-height:90px;resize:vertical}
+.f input:focus,.f select:focus,.f textarea:focus{outline:none;border-color:var(--red)}
+.row2{display:grid;gap:12px}
+@media(min-width:560px){.row2{grid-template-columns:1fr 1fr}}
+.cart-line{display:grid;grid-template-columns:1fr auto;gap:6px 10px;padding:10px 0;border-bottom:1px solid var(--line);align-items:center}
+.cart-line:last-child{border-bottom:0}
+.cart-line .nm{font-weight:700;font-size:.95rem}
+.cart-line .nm small{display:block;color:var(--muted);font-weight:500}
+.qty{display:inline-flex;align-items:center;gap:4px}
+.qty button{width:36px;height:36px;border-radius:50%;border:2px solid var(--line);background:#fff;font:inherit;font-weight:800;font-size:1.1rem;cursor:pointer}
+.qty button:hover{border-color:var(--red);color:var(--red)}
+.qty output{min-width:26px;text-align:center;font-weight:800}
+.cart-line .lt{grid-column:1/-1;text-align:right;font-size:.85rem;color:var(--muted);margin-top:-4px}
+.total{display:flex;justify-content:space-between;align-items:baseline;margin-top:12px;padding-top:12px;border-top:2px solid var(--ink);font-weight:900;font-size:1.2rem}
+.total small{font-weight:500;color:var(--muted);font-size:.78rem;display:block}
+.actions{display:grid;gap:10px;margin-top:16px}
+.status{min-height:1.4em;font-size:.9rem;font-weight:700;color:var(--green);margin:10px 0 0}
+.status.err{color:var(--red)}
+.hint{font-size:.8rem;color:var(--muted);margin:10px 0 0}
+
+/* Sticky cart bar */
+.bar{position:fixed;left:12px;right:12px;bottom:12px;z-index:60;display:none;align-items:center;justify-content:space-between;gap:10px;padding:10px 12px 10px 18px;background:var(--ink);color:#fff;border-radius:999px;box-shadow:0 8px 28px rgba(0,0,0,.35);text-decoration:none}
+.bar.on{display:flex}
+.bar b{font-size:1.02rem}
+.bar .go{background:var(--red);color:#fff;padding:10px 16px;border-radius:999px;font-weight:800;font-size:.92rem}
+@media(min-width:900px){.bar{left:auto;right:24px;max-width:420px}}
+
+/* Where */
+.where{display:grid;gap:18px}
+@media(min-width:900px){.where{grid-template-columns:1fr 1.2fr;align-items:start}}
+.info p{margin:0 0 10px}
+.info .soc{display:flex;flex-wrap:wrap;gap:10px;margin:14px 0}
+.hours{width:100%;border-collapse:collapse;background:#fff;border:1px solid var(--line);border-radius:var(--radius);overflow:hidden;margin-top:8px}
+.hours th,.hours td{padding:10px 14px;text-align:left;border-bottom:1px solid var(--line);font-size:.95rem}
+.hours tr:last-child th,.hours tr:last-child td{border-bottom:0}
+.hours th{font-weight:700}
+.hours td{text-align:right;font-variant-numeric:tabular-nums}
+.hours tr.today{background:#fdeceb}
+.hours tr.today th,.hours tr.today td{color:var(--red-d);font-weight:800}
+.map{position:relative;min-height:340px;border-radius:var(--radius);overflow:hidden;border:1px solid var(--line);background:
+  linear-gradient(135deg,#eee9e1,#f7f3ec);display:grid;place-items:center;text-align:center;padding:20px}
+.map iframe{position:absolute;inset:0;width:100%;height:100%;border:0}
+.map p{margin:0 0 12px;color:var(--muted);font-size:.88rem;max-width:36ch}
+
+/* Footer */
+.ftr{background:var(--ink);color:#cfc9bf;padding:40px 0 100px;font-size:.9rem}
+.ftr a{color:#fff}
+.ftr h3{color:#fff;font-size:1rem;margin-bottom:6px}
+.ftr .cols{display:grid;gap:22px}
+@media(min-width:760px){.ftr .cols{grid-template-columns:1.3fr 1fr 1fr}}
+.ftr details{margin-top:24px;border-top:1px solid #333;padding-top:16px}
+.ftr summary{cursor:pointer;font-weight:800;color:#fff}
+.ftr details div{margin-top:12px;max-width:80ch}
+.ftr details h4{color:#fff;margin:14px 0 4px;font-size:.92rem}
+.ftr details p,.ftr details ul{margin:0 0 6px}
+.copy{margin-top:22px;font-size:.8rem;opacity:.75}
+.ph-fill{background:#3a1d1f;color:#ffb3b8;padding:0 4px;border-radius:4px}
+
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}*{transition:none!important}}
+</style>
+</head>
+<body>
+
+<header class="hdr">
+  <div class="wrap">
+    <a class="brand" href="#top" aria-label="Extrafocaccia Pizzeria – inizio pagina">
+      <img data-logo src="img/logo.jpg" alt="Logo Extrafocaccia Pizzeria" hidden>
+      <span class="wm" data-wm><small>Pizzeria</small><b>Extra<span>focaccia</span></b></span>
+    </a>
+    <nav class="nav" aria-label="Navigazione principale">
+      <a href="#menu">Menù</a>
+      <a href="#perche">Perché noi</a>
+      <a href="#ordina">Ordina</a>
+      <a href="#dove">Dove siamo</a>
+    </nav>
+    <a class="btn btn-red" href="tel:+3907211391091" aria-label="Chiama Extrafocaccia al 0721 1391091">📞 Chiama</a>
+  </div>
+</header>
+
+<main id="top">
+
+<!-- HERO -->
+<section class="hero">
+  <div class="wrap">
+    <div class="hero-logo">
+      <img data-logo src="img/logo.jpg" alt="Logo ufficiale Extrafocaccia Pizzeria" hidden>
+      <span class="wm" data-wm><small>Pizzeria</small><b>Extra<span>focaccia</span></b></span>
+    </div>
+    <div class="badges">
+      <span class="badge badge-red">Lucrezia (PU) · Via Flaminia, 146 · Aperti tutte le sere</span>
+      <span class="badge badge-green" id="openNow" aria-live="polite">Aperti 7 giorni su 7</span>
+    </div>
+    <h1>Extrafocaccia Pizzeria – <em>Impasto Tipo 1</em>, Pizza al Piatto, Mezzo Metro &amp; Focacce</h1>
+    <p class="sub">Lievitazione naturale con farina semi-integrale di Tipo 1 ad alta digeribilità. Asporto veloce, consumo sul posto, pizze al mezzo metro e opzioni senza glutine.</p>
+    <div class="cta">
+      <a class="btn btn-red" href="tel:+3907211391091">📞 Ordina Ora (0721 1391091)</a>
+      <a class="btn btn-dark" href="#menu">Sfoglia il Menù &amp; Prezzi</a>
+      <a class="btn btn-line" href="#ordina">Prepara Ordine d'Asporto</a>
+    </div>
+  </div>
+</section>
+
+<!-- MENU -->
+<section class="sec" id="menu" aria-labelledby="menuTitle">
+  <div class="wrap">
+    <h2 id="menuTitle">Il <em>Menù</em> &amp; i Prezzi</h2>
+    <p class="lead">Cerca una pizza, scegli la categoria e tocca <strong>+</strong> per aggiungerla al tuo ordine: il totale indicativo si calcola da solo.</p>
+
+    <div class="search">
+      <svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="M20 20l-3.5-3.5"/></svg>
+      <label class="sr" for="q">Cerca nel menù</label>
+      <input id="q" type="search" placeholder="Cerca una pizza o un ingrediente..." autocomplete="off" enterkeyhint="search">
+    </div>
+
+    <div class="tabs" role="tablist" aria-label="Categorie del menù" id="tabs"></div>
+
+    <div class="chips" role="group" aria-label="Filtri">
+      <span class="lbl">Filtra:</span>
+      <button class="chip" type="button" data-filter="half" aria-pressed="false">📏 Al mezzo metro</button>
+      <button class="chip gf" type="button" data-filter="gf" aria-pressed="false">🌾 Senza glutine</button>
+    </div>
+
+    <div id="menuList" role="tabpanel" aria-live="polite"></div>
+
+    <p class="note">Prezzi in euro, indicativi e soggetti a variazione. Per allergeni e intolleranze chiedi sempre al banco prima di ordinare. Le pizze senza glutine sono preparate con ingredienti dedicati; contatta il locale per informazioni sulle precauzioni in cucina.</p>
+  </div>
+</section>
+
+<!-- PERCHÉ -->
+<section class="sec dark" id="perche" aria-labelledby="whyTitle">
+  <div class="wrap">
+    <div class="why">
+      <div>
+        <span class="badge badge-red">Il nostro impasto</span>
+        <h2 id="whyTitle" style="margin-top:12px">Farina Semi-Integrale di <em>Tipo 1</em> &amp; Alta Digeribilità</h2>
+        <p class="lead" style="margin-top:12px">Un impasto a lievitazione naturale con farina di Tipo 1: più profumo di grano, una base fragrante e leggera che si digerisce meglio. Dalla pizza al piatto al mezzo metro da dividere in compagnia, fino alla focaccia appena sfornata: ogni sera, pronta da portare via o da gustare ai nostri tavoli.</p>
+        <a class="btn btn-red" href="#menu">Scopri le pizze</a>
+      </div>
+      <div class="gallery">
+        <figure class="ph">
+          <img data-photo src="img/pizze-bancone.jpg" alt="Pizze tonde sulle pale di legno al bancone di Extrafocaccia" loading="lazy" width="600" height="800" hidden>
+          <span class="fb" data-fb>Aggiungi la foto in <code>img/pizze-bancone.jpg</code></span>
+          <figcaption>Pizze tonde sulle pale, al bancone</figcaption>
+        </figure>
+        <figure class="ph">
+          <img data-photo src="img/trancio-filante.jpg" alt="Trancio di pizza con mozzarella filante appena sfornato" loading="lazy" width="600" height="800" hidden>
+          <span class="fb" data-fb>Aggiungi la foto in <code>img/trancio-filante.jpg</code></span>
+          <figcaption>Il trancio filante appena sfornato</figcaption>
+        </figure>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="sec" aria-labelledby="featTitle" style="padding-top:20px">
+  <div class="wrap">
+    <h2 id="featTitle">Perché scegliere <em>Extrafocaccia</em></h2>
+    <div class="feats">
+      <div class="feat"><div class="ic" aria-hidden="true">🌾</div><h3>Impasto con Farina di Tipo 1</h3><p>Leggero, fragrante e digeribile.</p></div>
+      <div class="feat"><div class="ic" aria-hidden="true">🍕</div><h3>Pizze al Piatto, Mezzo Metro &amp; Focacce</h3><p>Dal formato singolo a quello da condividere.</p></div>
+      <div class="feat"><div class="ic" aria-hidden="true">✅</div><h3>Opzioni Senza Glutine Disponibili</h3><p>Una selezione dedicata di pizze senza glutine.</p></div>
+      <div class="feat"><div class="ic" aria-hidden="true">🅿️</div><h3>Ampio Parcheggio Gratuito</h3><p>Proprio davanti al locale.</p></div>
+      <div class="feat"><div class="ic" aria-hidden="true">🥡</div><h3>Asporto Veloce o Tavoli Comodi</h3><p>Accessibile in sedia a rotelle, cani ammessi, adatto a famiglie e gruppi.</p></div>
+      <div class="feat"><div class="ic" aria-hidden="true">💳</div><h3>Pagamenti Comodi</h3><p>Carte, Bancomat e NFC accettati.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- ORDINE -->
+<section class="sec" id="ordina" aria-labelledby="ordTitle" style="background:#fff;border-top:1px solid var(--line);border-bottom:1px solid var(--line)">
+  <div class="wrap">
+    <h2 id="ordTitle">Prepara il tuo <em>Ordine</em> o Prenota un Tavolo</h2>
+    <p class="lead">Compila, controlla il totale indicativo e poi chiama o invia il riepilogo su WhatsApp. L'ordine non viene inviato automaticamente: lo confermi tu con il locale.</p>
+
+    <div class="order">
+      <form class="panel" id="orderForm" novalidate>
+        <h3>I tuoi dati</h3>
+        <fieldset style="border:0;padding:0;margin:0">
+          <legend class="sr">Modalità</legend>
+          <div class="seg">
+            <input type="radio" name="mode" id="m1" value="🥡 Ritiro d'Asporto" checked><label for="m1">🥡 Ritiro d'Asporto</label>
+            <input type="radio" name="mode" id="m2" value="🍽️ Tavolo sul Posto"><label for="m2">🍽️ Tavolo sul Posto</label>
+          </div>
+        </fieldset>
+        <div class="row2">
+          <div class="f"><label for="time">Orario desiderato</label><select id="time" name="time"></select></div>
+          <div class="f" id="guestsBox" hidden><label for="guests">Persone</label><input id="guests" type="number" min="1" max="30" value="2" inputmode="numeric"></div>
+        </div>
+        <div class="row2">
+          <div class="f"><label for="name">Nome</label><input id="name" name="name" type="text" autocomplete="name" placeholder="Il tuo nome"></div>
+          <div class="f"><label for="tel">Telefono</label><input id="tel" name="tel" type="tel" autocomplete="tel" inputmode="tel" placeholder="Il tuo numero"></div>
+        </div>
+        <div class="f"><label for="notes">Cosa vuoi ordinare / Note</label><textarea id="notes" name="notes" placeholder="Scrivi qui altre pizze, modifiche, intolleranze… (oppure aggiungile con il tasto + nel menù)"></textarea></div>
+        <p class="status" id="status" role="status" aria-live="polite"></p>
+        <div class="actions">
+          <a class="btn btn-red btn-block" href="tel:+3907211391091">📞 Chiama Subito per Ordinare (0721 1391091)</a>
+          <button class="btn btn-dark btn-block" type="button" id="copyBtn">📋 Copia Riepilogo Ordine</button>
+          <button class="btn btn-line btn-block" type="button" id="waBtn">💬 Prepara WhatsApp</button>
+        </div>
+        <p class="hint">Il riepilogo resta sul tuo dispositivo: nessun dato viene inviato a server.</p>
+      </form>
+
+      <div class="panel" aria-live="polite">
+        <h3>Il tuo ordine</h3>
+        <div id="cart"></div>
+        <div class="total"><span>Totale indicativo<small>Da confermare al momento dell'ordine</small></span><span id="total">0,00 €</span></div>
+        <div class="actions"><button class="btn btn-line btn-block" type="button" id="clearBtn">Svuota ordine</button></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- DOVE -->
+<section class="sec" id="dove" aria-labelledby="whereTitle">
+  <div class="wrap">
+    <h2 id="whereTitle">Dove <em>Siamo</em> &amp; Orari</h2>
+    <p class="lead">Aperti 7 giorni su 7, ogni sera.</p>
+    <div class="where">
+      <div class="info">
+        <p><strong>Via Flaminia, 146 – 61030 Lucrezia, Cartoceto (PU)</strong></p>
+        <p>Telefono: <a href="tel:+3907211391091"><strong>0721 1391091</strong></a></p>
+        <div class="soc">
+          <a class="btn btn-dark" href="https://www.instagram.com/extrafocacciapizzeria/" target="_blank" rel="noopener noreferrer">Instagram @extrafocacciapizzeria</a>
+          <a class="btn btn-line" href="https://www.facebook.com/search/top?q=Extrafocaccia%20Pizzeria%20Lucrezia" target="_blank" rel="noopener noreferrer">Facebook</a>
+        </div>
+        <table class="hours" id="hours">
+          <caption class="sr">Orari di apertura</caption>
+          <tbody>
+            <tr data-d="0,1,2,3"><th scope="row">Lunedì – Giovedì</th><td>17:30 – 22:00</td></tr>
+            <tr data-d="4,5,6"><th scope="row">Venerdì – Sabato – Domenica</th><td>17:30 – 22:30</td></tr>
+          </tbody>
+        </table>
+      </div>
+      <div class="map" id="map">
+        <div>
+          <p>Per rispettare la tua privacy la mappa di Google viene caricata solo se lo desideri (Google potrebbe impostare cookie).</p>
+          <button class="btn btn-red" type="button" id="mapBtn">📍 Carica la mappa</button>
+          <p style="margin-top:12px"><a href="https://www.google.com/maps/search/?api=1&amp;query=43.7743409,12.9363695" target="_blank" rel="noopener noreferrer">Oppure apri in Google Maps</a></p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<footer class="ftr">
+  <div class="wrap">
+    <div class="cols">
+      <div>
+        <h3>Extrafocaccia Pizzeria</h3>
+        <p>Via Flaminia, 146<br>61030 Lucrezia, Cartoceto (PU)<br>Tel. <a href="tel:+3907211391091">0721 1391091</a></p>
+        <p>P.IVA <span class="ph-fill">[INSERIRE PARTITA IVA]</span></p>
+      </div>
+      <div>
+        <h3>Orari</h3>
+        <p>Lun – Gio: 17:30 – 22:00<br>Ven – Sab – Dom: 17:30 – 22:30</p>
+      </div>
+      <div>
+        <h3>Seguici</h3>
+        <p><a href="https://www.instagram.com/extrafocacciapizzeria/" target="_blank" rel="noopener noreferrer">Instagram</a></p>
+      </div>
+    </div>
+
+    <details id="privacy">
+      <summary>Informativa Privacy (GDPR)</summary>
+      <div>
+        <h4>Titolare del trattamento</h4>
+        <p><span class="ph-fill">[RAGIONE SOCIALE]</span>, Via Flaminia, 146 – 61030 Lucrezia, Cartoceto (PU) – P.IVA <span class="ph-fill">[INSERIRE PARTITA IVA]</span> – Tel. 0721 1391091 – Email <span class="ph-fill">[INSERIRE EMAIL]</span>.</p>
+        <h4>Dati trattati e finalità</h4>
+        <p>Questo sito non utilizza cookie di profilazione né strumenti di tracciamento. Nome, telefono e contenuto dell'ordine inseriti nel modulo vengono elaborati esclusivamente nel tuo browser per generare il riepilogo; non sono trasmessi né salvati sui nostri server. Se scegli di inviare il riepilogo via WhatsApp o di telefonare, i dati comunicati saranno trattati per gestire la tua richiesta (art. 6.1.b GDPR).</p>
+        <h4>Mappa di Google</h4>
+        <p>La mappa viene caricata solo dopo il tuo click. In quel momento Google LLC può trattare dati tecnici (es. indirizzo IP) e impostare cookie secondo la propria informativa.</p>
+        <h4>Link a terzi</h4>
+        <p>I link a Instagram, Facebook, WhatsApp e Google Maps rimandano a servizi esterni con proprie informative.</p>
+        <h4>I tuoi diritti</h4>
+        <p>Puoi chiedere accesso, rettifica, cancellazione, limitazione, portabilità e opposizione (artt. 15–22 GDPR) contattando il Titolare. Hai inoltre diritto di proporre reclamo al Garante per la protezione dei dati personali (garanteprivacy.it).</p>
+      </div>
+    </details>
+
+    <p class="copy">© <span id="yr">2026</span> Extrafocaccia Pizzeria – Tutti i diritti riservati. Sito prototipo.</p>
+  </div>
+</footer>
+
+<a class="bar" id="bar" href="#ordina" aria-label="Vai al riepilogo dell'ordine">
+  <span><b id="barCount">0 pezzi</b> · <b id="barTotal">0,00 €</b></span>
+  <span class="go">Vai all'ordine →</span>
+</a>
+
+<script>
+(function () {
+  'use strict';
+
+  /* ===== CONFIG ===== */
+  var WA_NUMBER = ''; // es. '393331234567' (prefisso internazionale, senza + né spazi). Vuoto = WhatsApp chiede il contatto.
+
+  /* ===== DATI MENÙ ===== */
+  // n = nome, d = ingredienti, p = prezzo al piatto, m = prezzo mezzo metro, from = "da"
+  var MENU = [
+    { id: 'classiche', label: 'Le Classiche', items: [
+      { n: 'Margherita', d: 'pomodoro, mozzarella', p: 5, m: 13 },
+      { n: 'Marinara', d: 'pomodoro, aglio, origano, olio', p: 4.5 },
+      { n: 'Rossa', d: 'pomodoro, origano, olio', p: 4 },
+      { n: 'Bianca', d: 'mozzarella, rosmarino, olio', p: 4.5 },
+      { n: 'Rossini', d: 'pomodoro, mozzarella, uova sode, maionese', p: 6.5, m: 16 },
+      { n: 'Napoli', d: 'pomodoro, mozzarella, acciughe, origano', p: 6.5 },
+      { n: 'Diavola', d: 'pomodoro, mozzarella, salame piccante', p: 6.5, m: 16 },
+      { n: 'Prosciutto Cotto', d: 'pomodoro, mozzarella, prosciutto cotto', p: 6 },
+      { n: 'Prosciutto e Funghi', d: 'pomodoro, mozzarella, prosciutto cotto, funghi', p: 7, m: 17 },
+      { n: 'Capricciosa', d: 'pomodoro, mozzarella, funghi, carciofi, prosciutto cotto, olive', p: 7.5, m: 18 },
+      { n: '4 Stagioni', d: 'pomodoro, mozzarella, prosciutto cotto, funghi, carciofi, olive', p: 7.5 },
+      { n: '4 Formaggi', d: 'mozzarella e selezione di formaggi', p: 7.5 },
+      { n: 'Tonno e Cipolla', d: 'pomodoro, mozzarella, tonno, cipolla', p: 7 },
+      { n: 'Wurstel e Patatine', d: 'pomodoro, mozzarella, wurstel, patatine', p: 7 },
+      { n: 'Salsiccia e Patate', d: 'mozzarella, salsiccia, patate', p: 7.5 },
+      { n: 'Verdure Grigliate', d: 'pomodoro, mozzarella, verdure grigliate', p: 7.5 }
+    ]},
+    { id: 'speciali', label: 'Speciali & Bianche', items: [
+      { n: 'Boscaiola', d: 'mozzarella, funghi, salsiccia', p: 7.5 },
+      { n: 'Contadina', d: 'mozzarella, pancetta, patate al forno, rosmarino', p: 7.5 },
+      { n: 'Tartufata', d: 'mozzarella, crema al tartufo, funghi, scaglie di grana', p: 8.5 },
+      { n: 'Valtellina', d: 'pomodoro, mozzarella, bresaola, rucola, grana', p: 8.5 },
+      { n: 'Speck e Brie', d: 'mozzarella, speck, brie', p: 8 },
+      { n: 'Speck e Gorgonzola', d: 'mozzarella, speck, gorgonzola', p: 8 },
+      { n: 'Crudo, Rucola e Grana', d: 'mozzarella, prosciutto crudo, rucola, grana', p: 8.5 },
+      { n: 'Norcina', d: 'mozzarella, salsiccia, crema di tartufo', p: 8.5 },
+      { n: 'Parmigiana', d: 'pomodoro, mozzarella, melanzane fritte, grana, basilico', p: 7.5 }
+    ]},
+    { id: 'gf', label: '🌾 Senza Glutine', gf: true, items: [
+      { n: 'Margherita Senza Glutine', d: 'pomodoro, mozzarella', p: 7 },
+      { n: 'Prosciutto Cotto Senza Glutine', d: 'pomodoro, mozzarella, prosciutto cotto', p: 8 },
+      { n: 'Rossini Senza Glutine', d: 'pomodoro, mozzarella, uova sode, maionese', p: 8.5 },
+      { n: 'Diavola Senza Glutine', d: 'pomodoro, mozzarella, salame piccante', p: 8.5 },
+      { n: 'Capricciosa Senza Glutine', d: 'pomodoro, mozzarella, funghi, carciofi, prosciutto cotto, olive', p: 9.5 },
+      { n: 'Farcita a scelta Senza Glutine', d: 'scegli gli ingredienti che preferisci', p: 8.5, from: true }
+    ]},
+    { id: 'focacce', label: 'Focacce & Dolci', items: [
+      { sec: 'Focacce farcite', n: 'Focaccia al Rosmarino e Olio EVO', d: 'rosmarino, olio extravergine d\'oliva', p: 3.5 },
+      { sec: 'Focacce farcite', n: 'Focaccia Crudo, Mozzarella e Rucola', d: 'prosciutto crudo, mozzarella, rucola', p: 6.5 },
+      { sec: 'Focacce farcite', n: 'Focaccia Bresaola, Rucola e Grana', d: 'bresaola, rucola, grana', p: 7 },
+      { sec: 'Focacce farcite', n: 'Focaccia Mortadella, Stracciatella e Pistacchio', d: 'mortadella, stracciatella, pistacchio', p: 7.5 },
+      { sec: 'Focacce farcite', n: 'Focaccia Vegetariana con Verdure Grigliate', d: 'verdure grigliate', p: 6 },
+      { sec: 'Dolci', n: 'Tiramisù della casa', d: 'preparato in casa', p: 4 },
+      { sec: 'Dolci', n: 'Panna Cotta', d: 'dolce al cucchiaio', p: 3.5 },
+      { sec: 'Dolci', n: 'Focaccina dolce alla Nutella', d: 'focaccina con Nutella', p: 4.5 }
+    ]}
+  ];
+  MENU.forEach(function (c) {
+    c.items.forEach(function (it, i) {
+      it.id = c.id + '-' + i; it.cat = c.label; it.gf = !!c.gf;
+    });
+  });
+  var ALL = [];
+  MENU.forEach(function (c) { ALL = ALL.concat(c.items); });
+  var BY_ID = {};
+  ALL.forEach(function (it) { BY_ID[it.id] = it; });
+
+  /* ===== UTILITÀ ===== */
+  var fmt = new Intl.NumberFormat('it-IT', { style: 'currency', currency: 'EUR' });
+  function eur(v) { return fmt.format(v); }
+  function norm(s) { return String(s).toLowerCase().normalize('NFD').replace(/[\u0300-\u036f]/g, ''); }
+  function $(id) { return document.getElementById(id); }
+  function el(tag, cls, text) {
+    var e = document.createElement(tag);
+    if (cls) e.className = cls;
+    if (text != null) e.textContent = text;
+    return e;
+  }
+
+  /* ===== LOGO / FOTO (fallback eleganti se i file mancano) ===== */
+  document.querySelectorAll('img[data-logo]').forEach(function (img) {
+    var wm = img.parentNode.querySelector('[data-wm]');
+    img.addEventListener('load', function () { img.hidden = false; if (wm) wm.hidden = true; });
+    if (img.complete && img.naturalWidth > 0) { img.hidden = false; if (wm) wm.hidden = true; }
+  });
+  document.querySelectorAll('img[data-photo]').forEach(function (img) {
+    var fb = img.parentNode.querySelector('[data-fb]');
+    function ok() { img.hidden = false; if (fb) fb.hidden = true; }
+    img.addEventListener('load', ok);
+    if (img.complete && img.naturalWidth > 0) ok();
+  });
+
+  /* ===== MENÙ ===== */
+  var state = { tab: 'classiche', filter: '', q: '' };
+  var tabsEl = $('tabs'), listEl = $('menuList'), chips = document.querySelectorAll('.chip');
+
+  function buildTabs() {
+    MENU.forEach(function (c) {
+      var b = el('button', 'tab', c.label);
+      b.type = 'button'; b.setAttribute('role', 'tab'); b.dataset.tab = c.id;
+      b.addEventListener('click', function () {
+        state.tab = c.id; state.filter = ''; state.q = ''; $('q').value = '';
+        render();
+      });
+      tabsEl.appendChild(b);
+    });
+  }
+
+  function itemCard(it) {
+    var card = el('article', 'item');
+    var top = el('div');
+    var h = el('h3', null, it.n);
+    if (it.gf) h.appendChild(el('span', 'gfb', 'SENZA GLUTINE'));
+    top.appendChild(h);
+    if (it.d) top.appendChild(el('p', null, it.d));
+    card.appendChild(top);
+
+    var prices = el('div', 'prices');
+    function addBtn(size, price, sizeLabel) {
+      var b = el('button', 'add');
+      b.type = 'button';
+      b.setAttribute('aria-label', 'Aggiungi ' + it.n + ' ' + sizeLabel + ' a ' + eur(price));
+      var label = (it.from ? 'da ' : '') + eur(price);
+      if (it.m != null) b.appendChild(el('span', 'sz', sizeLabel));
+      b.appendChild(el('span', null, label));
+      b.appendChild(el('span', 'pl', '+'));
+      b.addEventListener('click', function () { addToCart(it.id, size, b); });
+      prices.appendChild(b);
+    }
+    addBtn('piatto', it.p, 'Piatto');
+    if (it.m != null) addBtn('mezzo', it.m, 'Mezzo metro');
+    card.appendChild(prices);
+    return card;
+  }
+
+  function render() {
+    var q = norm(state.q.trim());
+    var f = state.filter;
+    var global = !!q || !!f;
+
+    Array.prototype.forEach.call(tabsEl.children, function (b) {
+      b.setAttribute('aria-selected', String(!global && b.dataset.tab === state.tab));
+      b.tabIndex = (!global && b.dataset.tab === state.tab) || (global && b.dataset.tab === state.tab) ? 0 : -1;
+    });
+    chips.forEach(function (c) { c.setAttribute('aria-pressed', String(state.filter === c.dataset.filter)); });
+
+    var groups = [];
+    MENU.forEach(function (c) {
+      if (!global && c.id !== state.tab) return;
+      var items = c.items.filter(function (it) {
+        if (f === 'half' && it.m == null) return false;
+        if (f === 'gf' && !it.gf) return false;
+        if (q && norm(it.n + ' ' + it.d + ' ' + (it.sec || '')).indexOf(q) === -1) return false;
+        return true;
+      });
+      if (items.length) groups.push({ c: c, items: items });
+    });
+
+    listEl.textContent = '';
+    if (!groups.length) {
+      listEl.appendChild(el('div', 'empty', 'Nessun risultato. Prova con un altro ingrediente o chiamaci: 0721 1391091.'));
+      return;
+    }
+    groups.forEach(function (g) {
+      if (global) listEl.appendChild(el('h3', 'cat-title', g.c.label));
+      var lastSec = null, grid = null;
+      g.items.forEach(function (it) {
+        if (!grid || it.sec !== lastSec) {
+          if (it.sec) listEl.appendChild(el('h3', 'cat-title', it.sec));
+          grid = el('div', 'grid');
+          listEl.appendChild(grid);
+          lastSec = it.sec;
+        }
+        grid.appendChild(itemCard(it));
+      });
+    });
+  }
+
+  $('q').addEventListener('input', function (e) { state.q = e.target.value; render(); });
+  chips.forEach(function (c) {
+    c.addEventListener('click', function () {
+      state.filter = state.filter === c.dataset.filter ? '' : c.dataset.filter;
+      render();
+    });
+  });
+
+  /* ===== CARRELLO ===== */
+  var cart = {}; // key -> {id,size,qty}
+  var cartEl = $('cart'), totalEl = $('total');
+
+  function unitPrice(line) {
+    var it = BY_ID[line.id];
+    return line.size === 'mezzo' ? it.m : it.p;
+  }
+  function addToCart(id, size, btn) {
+    var key = id + '|' + size;
+    if (!cart[key]) cart[key] = { id: id, size: size, qty: 0 };
+    cart[key].qty++;
+    renderCart();
+    if (btn) {
+      btn.classList.add('flash');
+      setTimeout(function () { btn.classList.remove('flash'); }, 250);
+    }
+  }
+  function changeQty(key, d) {
+    if (!cart[key]) return;
+    cart[key].qty += d;
+    if (cart[key].qty <= 0) delete cart[key];
+    renderCart();
+  }
+  function cartTotals() {
+    var t = 0, n = 0;
+    Object.keys(cart).forEach(function (k) {
+      t += unitPrice(cart[k]) * cart[k].qty; n += cart[k].qty;
+    });
+    return { total: t, count: n };
+  }
+  function renderCart() {
+    cartEl.textContent = '';
+    var keys = Object.keys(cart);
+    if (!keys.length) {
+      cartEl.appendChild(el('div', 'empty', 'Ancora nessuna pizza. Tocca + nel menù per aggiungerla qui.'));
+    }
+    keys.forEach(function (k) {
+      var line = cart[k], it = BY_ID[line.id], up = unitPrice(line);
+      var row = el('div', 'cart-line');
+      var nm = el('div', 'nm', it.n);
+      nm.appendChild(el('small', null, (line.size === 'mezzo' ? 'Mezzo metro' : 'Al piatto') + ' · ' + (it.from ? 'da ' : '') + eur(up)));
+      row.appendChild(nm);
+      var q = el('div', 'qty');
+      var minus = el('button', null, '−'); minus.type = 'button'; minus.setAttribute('aria-label', 'Diminuisci ' + it.n);
+      var out = el('output', null, String(line.qty));
+      var plus = el('button', null, '+'); plus.type = 'button'; plus.setAttribute('aria-label', 'Aumenta ' + it.n);
+      minus.addEventListener('click', function () { changeQty(k, -1); });
+      plus.addEventListener('click', function () { changeQty(k, 1); });
+      q.appendChild(minus); q.appendChild(out); q.appendChild(plus);
+      row.appendChild(q);
+      row.appendChild(el('div', 'lt', eur(up * line.qty)));
+      cartEl.appendChild(row);
+    });
+    var t = cartTotals();
+    totalEl.textContent = eur(t.total);
+    $('barCount').textContent = t.count + (t.count === 1 ? ' pezzo' : ' pezzi');
+    $('barTotal').textContent = eur(t.total);
+    updateBar();
+  }
+
+  $('clearBtn').addEventListener('click', function () { cart = {}; renderCart(); });
+
+  /* barra carrello: nascosta quando la sezione ordine è visibile */
+  var orderVisible = false;
+  function updateBar() {
+    $('bar').classList.toggle('on', cartTotals().count > 0 && !orderVisible);
+  }
+  if ('IntersectionObserver' in window) {
+    new IntersectionObserver(function (es) {
+      orderVisible = es[0].isIntersecting; updateBar();
+    }, { threshold: 0.15 }).observe($('ordina'));
+  }
+
+  /* ===== MODULO ===== */
+  var timeSel = $('time');
+  ['18:00', '18:30', '19:00', '19:30', '20:00', '20:30', '21:00', '21:30', '22:00'].forEach(function (t) {
+    var o = el('option', null, t); o.value = t; timeSel.appendChild(o);
+  });
+  function mode() { return document.querySelector('input[name="mode"]:checked').value; }
+  document.querySelectorAll('input[name="mode"]').forEach(function (r) {
+    r.addEventListener('change', function () { $('guestsBox').hidden = (mode().indexOf('Tavolo') === -1); });
+  });
+  $('orderForm').addEventListener('submit', function (e) { e.preventDefault(); });
+
+  function summary() {
+    var L = [];
+    L.push('Ordine – Extrafocaccia Pizzeria');
+    L.push('Modalità: ' + mode());
+    L.push('Orario: ' + timeSel.value);
+    if (mode().indexOf('Tavolo') !== -1) L.push('Persone: ' + ($('guests').value || '-'));
+    L.push('Nome: ' + ($('name').value.trim() || '-'));
+    L.push('Telefono: ' + ($('tel').value.trim() || '-'));
+    var keys = Object.keys(cart);
+    if (keys.length) {
+      L.push('');
+      keys.forEach(function (k) {
+        var line = cart[k], it = BY_ID[line.id], up = unitPrice(line);
+        L.push('• ' + line.qty + '× ' + it.n + ' (' + (line.size === 'mezzo' ? 'mezzo metro' : 'piatto') + ') – ' + eur(up * line.qty));
+      });
+      L.push('Totale indicativo: ' + eur(cartTotals().total));
+    }
+    var notes = $('notes').value.trim();
+    if (notes) { L.push(''); L.push('Note: ' + notes); }
+    return L.join('\n');
+  }
+  function setStatus(msg, err) {
+    var s = $('status'); s.textContent = msg; s.className = 'status' + (err ? ' err' : '');
+  }
+  function validate() {
+    if (!Object.keys(cart).length && !$('notes').value.trim()) {
+      setStatus('Aggiungi almeno una pizza dal menù o scrivila nelle note.', true); return false;
+    }
+    if (!$('name').value.trim()) {
+      setStatus('Inserisci il tuo nome.', true); $('name').focus(); return false;
+    }
+    return true;
+  }
+  function copyText(text) {
+    if (navigator.clipboard && window.isSecureContext) return navigator.clipboard.writeText(text);
+    return new Promise(function (res, rej) {
+      var ta = document.createElement('textarea');
+      ta.value = text; ta.setAttribute('readonly', ''); ta.style.position = 'fixed'; ta.style.opacity = '0';
+      document.body.appendChild(ta); ta.select();
+      try { document.execCommand('copy') ? res() : rej(); } catch (e) { rej(e); }
+      document.body.removeChild(ta);
+    });
+  }
+  $('copyBtn').addEventListener('click', function () {
+    if (!validate()) return;
+    copyText(summary()).then(function () {
+      setStatus('✔ Riepilogo copiato! Incollalo in un messaggio oppure chiama per confermare.');
+    }, function () { setStatus('Copia non riuscita: seleziona e copia il testo manualmente.', true); });
+  });
+  $('waBtn').addEventListener('click', function () {
+    if (!validate()) return;
+    var url = 'https://wa.me/' + WA_NUMBER + '?text=' + encodeURIComponent(summary());
+    window.open(url, '_blank', 'noopener');
+    setStatus(WA_NUMBER ? '✔ WhatsApp aperto: premi Invia per mandare l\'ordine.' : '✔ WhatsApp aperto: scegli il contatto del locale e invia.');
+  });
+
+  /* ===== ORARI / APERTO ORA ===== */
+  var DAYS = { Mon: 0, Tue: 1, Wed: 2, Thu: 3, Fri: 4, Sat: 5, Sun: 6 };
+  function romeNow() {
+    var p = new Intl.DateTimeFormat('en-GB', { timeZone: 'Europe/Rome', weekday: 'short', hour: '2-digit', minute: '2-digit', hour12: false }).formatToParts(new Date());
+    var o = {}; p.forEach(function (x) { o[x.type] = x.value; });
+    return { d: DAYS[o.weekday], m: (parseInt(o.hour, 10) % 24) * 60 + parseInt(o.minute, 10) };
+  }
+  function closeAt(d) { return d >= 4 ? 22 * 60 + 30 : 22 * 60; }
+  function hhmm(m) { return String(Math.floor(m / 60)).padStart(2, '0') + ':' + String(m % 60).padStart(2, '0'); }
+  function updateOpen() {
+    var n = romeNow(), open = 17 * 60 + 30, close = closeAt(n.d), b = $('openNow');
+    if (n.m >= open && n.m < close) {
+      b.textContent = 'Aperto ora · fino alle ' + hhmm(close); b.className = 'badge badge-green';
+    } else if (n.m < open) {
+      b.textContent = 'Chiuso ora · apre alle 17:30'; b.className = 'badge badge-closed';
+    } else {
+      b.textContent = 'Chiuso ora · riapre domani alle 17:30'; b.className = 'badge badge-closed';
+    }
+    document.querySelectorAll('#hours tr').forEach(function (tr) {
+      tr.classList.toggle('today', tr.dataset.d.split(',').indexOf(String(n.d)) !== -1);
+    });
+  }
+
+  /* ===== MAPPA (on-click, nessun cookie preventivo) ===== */
+  $('mapBtn').addEventListener('click', function () {
+    var box = $('map'), f = document.createElement('iframe');
+    f.src = 'https://www.google.com/maps?q=43.7743409,12.9363695&z=17&output=embed';
+    f.title = 'Mappa: Extrafocaccia Pizzeria, Via Flaminia 146, Lucrezia di Cartoceto';
+    f.loading = 'lazy'; f.referrerPolicy = 'no-referrer-when-downgrade';
+    f.setAttribute('allowfullscreen', '');
+    box.textContent = ''; box.appendChild(f);
+  });
+
+  /* ===== INIT ===== */
+  $('yr').textContent = new Date().getFullYear();
+  buildTabs(); render(); renderCart(); updateOpen();
+  setInterval(updateOpen, 60000);
+})();
+</script>
+</body>
+</html>
